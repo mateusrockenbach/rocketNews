@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: #121214;
+ color: #ffffff;
+ -webkit-font-smoothing: antialiased;
+ font-family: 'Spartan', sans-serif;
+ font-size: 14px;
+}
+
+button {
+ cursor: pointer;
+ width: 48px;
+ height: 48px;
+ background: #8257E5;
+ border: none;
+ background-image: url(./assets/send.svg) no-repeat;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: none;
+}
+
+a:hover{
+    filter: brightness(1.1);
+}
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: #08C05E;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+::selection {
+    background-color: #8257E5;
+  }
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/background-right-side.jpg);
+    background-position: right;
+}
+
+.background {
+    background: #121214;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.left-side {
+    width: 75vw;
+    padding: 50px 36px 0 30px;
+    z-index: 2;
+    /* background: #121214; */
+}
+
+.left-side .logo {
+    padding-bottom: 92px;
+}
+
+.left-side .logo img{
+    width: 100%;
+    max-width: 389px;
+}
+
+.left-side .content {
+    margin-bottom: 50px;
+    max-width: 45vw;
+}
+
+.left-side .form form label{
+    margin-left: 10px;
+    color: #A8A8A8;
+}
+
+.left-side .form form input {
+    /* margin-left: 10px; */
+    /* margin-top: 10px; */
+    width: 75%;
+    height: 48px;
+    border-left: 5px solid #04D361;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #6A6A6A;
+    opacity: 1; /* Firefox */
+    padding-left: 10px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #6A6A6A;
+    padding-left: 10px;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #6A6A6A;
+    padding-left: 10px;
+  }
+
+  .purple-button {
+    display: inline-flex;
+    align-items: center;
+    color: #8257E5;
+    padding-top: 50px;
+    padding-left: 10px;
+  }
+
+  .purple-button::after{
+      content: url('./assets/arrow-right.svg');
+      padding-top: 4px;
+  }
